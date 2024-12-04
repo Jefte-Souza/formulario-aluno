@@ -65,7 +65,12 @@ input, select{
 @media screen and (max-width: 600px) {
     
     .formulario, .caixa{
-        width: 400px;
+        width: 350px;
+    }
+
+    input, select{
+        width: 280px;
+        height: 30px;
     }
 }
 
