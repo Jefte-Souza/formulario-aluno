@@ -62,4 +62,10 @@ input, select{
     background-color: rgb(117, 0, 159);
 }
 
+@media screen and (max-width: 600px) {
+    
+    .formulario, .caixa{
+        width: 400px;
+    }
+}
 
