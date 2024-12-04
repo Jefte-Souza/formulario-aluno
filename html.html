@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="main">
+        <div class="formulario">
+            <h1>Formulário do aluno</h1>
+            <form>
+                <label>Matrícula:</label>
+                <input id="matricula" type="number" placeholder="Digite sua matrícula" min="0" max="5">
+                <p id="erroMatri" class="erro">Valor inválido.</p>
+
+                <label>Nome:</label>
+                <input id="nome" type="text" placeholder="Digite o seu nome" maxlength="25" >
+                <p id="erroNome" class="erro">Preencha este campo.</p>
+
+                <label>Endereço:</label>
+                <input id="endereco" type="text" placeholder="Digite o seu endereço" maxlength="40" >
+                <p id="erroEndereco" class="erro">Preencha este campo.</p>
+
+                <label>Disciplina:</label>
+                <select id="disci" >
+                    <option selected disabled>Selecione a Disciplina</option>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                    <option>Python</option>
+                    <option>Java</option>
+                </select>
+                <p id="erroDisci" class="erro">Selecione uma disciplina.</p>
+
+                <label>Nota:</label>
+                <input id="nota" type="number" placeholder="Digite sua nota" min="0" max="10" > 
+                <p id="erroNota" class="erro">Digite uma nota válida.</p>
+
+
+                <button id="enviar" type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div id="resultado">
+        </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/form.js"></script>
+</body>
+</html>
